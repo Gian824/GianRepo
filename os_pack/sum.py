@@ -1,7 +1,6 @@
-import os
-def summ(num1, *args):
-    total = num1
-    for num in args:
-        total = total + num
-    return total
+def sum(arg1,arg2):
+    arg1 = float(arg1)
+    arg2 = float(arg2)
+    out = arg1 + arg2
+    return str(out)
 
