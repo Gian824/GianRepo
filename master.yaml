@@ -32,7 +32,7 @@ paths:
       description: Returns sum
       responses:
         '200':
-          description: 'Sum'
+          description: 'This is a simple python program that includes an summation declaration'
           content:
             application/json:
               schema:
