@@ -24,11 +24,11 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CPU'
-  /sum:
+  /sum/<arg1>/<arg2>:
     get:
       tags:
         - SUM
-      operationId: os_pack.sum.get_processor_name
+      operationId: os_pack.sum.sum
       description: Returns sum
       responses:
         '200':
@@ -36,7 +36,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/sum'
+                $ref: '#/components/schemas/CPU'
 servers:
   - url: 'http://localhost:8080/engr-222'
 components:
